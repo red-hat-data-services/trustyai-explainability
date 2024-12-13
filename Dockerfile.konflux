@@ -18,25 +18,15 @@ ARG CI_CONTAINER_VERSION="unknown"
 
 FROM registry.redhat.io/ubi8/ubi-minimal@sha256:c12e67af6a7e15113d76bc72f10bef2045c026c71ec8b7124c8a075458188a83 AS stage
 
-# Define a build argument for the PNC list of built files
-ARG PNC_FILES_JSON
-RUN echo "Files to download: $PNC_FILES_JSON"
-
 # Install packages for the install script and extract archives
-RUN microdnf --setopt=install_weak_deps=0 --setopt=tsflags=nodocs install -y unzip jq wget
+RUN microdnf --setopt=install_weak_deps=0 --setopt=tsflags=nodocs install -y unzip
 
-ENV STAGE_DIR="/tmp/artifacts"
-WORKDIR $STAGE_DIR
-
-# Filter the zip files only and unzip them in /root/
-RUN echo "$PNC_FILES_JSON" | jq -r '.[] | select(test("\\.zip$"))' | \
-    while read url; do wget --no-check-certificate "$url"; done && \
+RUN cd ./cachi2/output/deps/generic && \
     for file in *.zip; do unzip -d /root/ "$file"; done
 
 
-
 ###############################################################################
-FROM registry.redhat.io/ubi8/openjdk-17-runtime@sha256:592bf5e50453b6b89506df5b88b1ef51835914559b4e81355bcdcffe2e21dbaf as runtime
+FROM registry.redhat.io/ubi8/openjdk-17-runtime@sha256:f86ab776ae96ff2fcb376c4107ad3e7abefbb7fae794c56eddb56770f556a061 as runtime
 ENV LANGUAGE='en_US:en'
 
 
