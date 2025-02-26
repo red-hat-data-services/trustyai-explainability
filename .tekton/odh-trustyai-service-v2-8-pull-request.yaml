@@ -5,19 +5,20 @@ metadata:
   annotations:
     build.appstudio.openshift.io/repo: https://github.com/red-hat-data-services/trustyai-explainability?rev={{revision}}
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
+    build.appstudio.redhat.com/pull_request_number: '{{pull_request_number}}'
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     build.appstudio.openshift.io/build-nudge-files: "build/operator-nudging.yaml"
     pipelinesascode.tekton.dev/on-cel-expression: |
-      event == "push" 
+      event == "pull_request" 
       && target_branch == "rhoai-2.8" 
-      && ("artifacts.lock.yaml".pathChanged() || ".tekton/odh-trustyai-service-v2-8-push.yaml".pathChanged())
+      && ("artifacts.lock.yaml".pathChanged() || ".tekton/odh-trustyai-service-v2-8-pull-request.yaml".pathChanged())
   creationTimestamp:
   labels:
     appstudio.openshift.io/application: rhoai-v2-8
     appstudio.openshift.io/component: odh-trustyai-service-v2-8
     pipelines.appstudio.openshift.io/type: build
-  name: odh-trustyai-service-v2-8-on-push
+  name: odh-trustyai-service-v2-8-on-pull-request
   namespace: rhoai-tenant
 spec:
   params:
@@ -26,7 +27,9 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/rhoai/odh-trustyai-service-rhel8:{{target_branch}}
+    value: quay.io/rhoai/odh-trustyai-service-rhel8:on-pr-{{target_branch}}
+  - name: image-expires-after
+    value: 5d
   - name: dockerfile
     value: Dockerfile.konflux
   - name: path-context
