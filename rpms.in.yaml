@@ -3,6 +3,3 @@ contentOrigin:
     - ubi.repo
 packages:
   - unzip
-  - jq
-  - wget
-  - shadow-utils
