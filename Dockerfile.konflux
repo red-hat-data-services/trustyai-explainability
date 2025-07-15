@@ -16,7 +16,7 @@
 ARG SOURCE_CODE=.
 ARG CI_CONTAINER_VERSION="unknown"
 
-FROM registry.access.redhat.com/ubi9/ubi-minimal@sha256:e1c4703364c5cb58f5462575dc90345bcd934ddc45e6c32f9c162f2b5617681c AS stage
+FROM registry.access.redhat.com/ubi9/ubi-minimal@sha256:11db23b63f9476e721f8d0b8a2de5c858571f76d5a0dae2ec28adf08cbaf3652 AS stage
 
 # Install packages for the install script and extract archives
 RUN microdnf --setopt=install_weak_deps=0 --setopt=tsflags=nodocs install -y unzip
@@ -25,7 +25,7 @@ RUN cd ./cachi2/output/deps/generic && \
     for file in *.zip; do unzip -d /root/ "$file"; done
 
 ###############################################################################
-FROM registry.access.redhat.com/ubi9/openjdk-17-runtime@sha256:07e1fcaaeb8d4210dccd781a47e123df5d3c917d868a4ff325739118403bbc7c as runtime
+FROM registry.access.redhat.com/ubi9/openjdk-17-runtime@sha256:59226680b19da8de90ce35ecbe140b5c0245d80529a1aad81e1f0363e8b116db as runtime
 ENV LANGUAGE='en_US:en'
 
 
