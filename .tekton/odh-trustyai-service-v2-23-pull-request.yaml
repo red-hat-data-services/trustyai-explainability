@@ -11,6 +11,7 @@ metadata:
       event == "pull_request"
       && target_branch == "rhoai-2.23-multi-arch-poc"
       && ("artifacts.lock.yaml".pathChanged() || ".tekton/odh-trustyai-service-v2-23-pull-request.yaml".pathChanged() || "rpms.lock.yaml".pathChanged() )
+
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: rhoai-v2-23-multi-arch-poc
