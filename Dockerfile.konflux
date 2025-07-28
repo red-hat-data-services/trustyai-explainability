@@ -16,7 +16,7 @@
 ARG SOURCE_CODE=.
 ARG CI_CONTAINER_VERSION="unknown"
 
-FROM registry.redhat.io/ubi8/ubi-minimal@sha256:5b195cf0b8eb2262ce81334ee44066fdb5026022803f55bfe607be7d08d4fe43 AS stage
+FROM registry.redhat.io/ubi8/ubi-minimal@sha256:8075621ed734d32d91faba9205bbbf310fc579eb3920ec292b2c67980e4dd51b AS stage
 
 # Install packages for the install script and extract archives
 RUN microdnf --setopt=install_weak_deps=0 --setopt=tsflags=nodocs install -y unzip
