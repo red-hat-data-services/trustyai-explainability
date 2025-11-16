@@ -47,7 +47,7 @@
                 <artifactId>jackson-core</artifactId>
                 <version>${version.com.fasterxml.jackson.core}</version>
             </dependency>
-            
+
             <!-- Force all Netty dependencies to use 4.1.125.Final -->
             <dependency>
                 <groupId>io.netty</groupId>
