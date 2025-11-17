@@ -108,7 +108,7 @@
                 <artifactId>netty-handler</artifactId>
                 <version>4.1.125.Final</version>
             </dependency>
-            
+
             <!-- Force all Netty dependencies to use 4.1.125.Final -->
             <dependency>
                 <groupId>io.netty</groupId>
