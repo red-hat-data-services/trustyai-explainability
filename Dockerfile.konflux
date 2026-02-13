@@ -42,7 +42,8 @@ ENV JAVA_OPTS="-Dquarkus.http.host=0.0.0.0 -Djava.zutil.logging.manager=org.jbos
 ENV JAVA_APP_JAR="/deployments/quarkus-run.jar"
 
 LABEL com.redhat.component="odh-trustyai-service" \
-      name="managed-open-data-hub/odh-trustyai-service-rhel8" \
+      name="rhoai/odh-trustyai-service-rhel8" \
+      cpe="cpe:/a:redhat:openshift_ai:2.19::el8" \
       description="TrustyAI is a service to provide integration fairness and bias tracking to modelmesh-served models" \
       summary="odh-trustyai-service" \
       maintainer="['managed-open-data-hub@redhat.com']" \
