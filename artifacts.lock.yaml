@@ -1,5 +1,5 @@
 metadata:
   version: "1.0"
 artifacts:
-  - download_url: https://indy.corp.redhat.com/api/content/maven/hosted/pnc-builds/org/kie/trustyai/explainability-service/999.0.0.managedsvc-redhat-01887/explainability-service-999.0.0.managedsvc-redhat-01887.zip
-    checksum: sha256:dd50f3931332b1c55efe8bbb34b260e593b05edcd00bb197f44b7298b1370e82
+  - download_url: https://indy.corp.redhat.com/api/content/maven/hosted/pnc-builds/org/kie/trustyai/explainability-service/999.0.0.managedsvc-redhat-01889/explainability-service-999.0.0.managedsvc-redhat-01889.zip
+    checksum: sha256:4cb43fa29bef069c82041aa88715324c9a522a0f30acdbc8b87a235724a81abe
