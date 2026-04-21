@@ -16,7 +16,7 @@
 ARG SOURCE_CODE=.
 ARG CI_CONTAINER_VERSION="unknown"
 
-FROM registry.redhat.io/ubi8/ubi-minimal@sha256:a2b9823a9883ca2d6de30079da84afce32cd1f3777905aca1a46d4383ff096f9 AS stage
+FROM registry.redhat.io/ubi8/ubi-minimal@sha256:18dde055f01f35b31122731440263922bc32e62cdd15f1d00764f3fa763464c3 AS stage
 
 RUN ls -la .
 RUN ls -la ..
@@ -32,7 +32,7 @@ RUN cd ./cachi2/output/deps/generic && \
 
 
 ###############################################################################
-FROM registry.redhat.io/ubi8/openjdk-17-runtime@sha256:16c9eb408282e44fa73ca965e1c17985a918e547e3e93ab361377b26358ac998 as runtime
+FROM registry.redhat.io/ubi8/openjdk-17-runtime@sha256:151f4f781ee4280a6b9f0a8ae75caf70723d2c9c8c940cf193a456873064647e as runtime
 ENV LANGUAGE='en_US:en'
 
 
