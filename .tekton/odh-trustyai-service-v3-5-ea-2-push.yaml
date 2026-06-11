@@ -9,9 +9,8 @@ metadata:
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     build.appstudio.openshift.io/build-nudge-files: "build/operator-nudging.yaml"
     pipelinesascode.tekton.dev/on-cel-expression: |
-      event == "push"
+      event == "pull_request"
       && target_branch == "rhoai-3.5-ea.2"
-      && ("artifacts.lock.yaml".pathChanged() || ".tekton/odh-trustyai-service-v3-5-ea-2-push.yaml".pathChanged() || "rpms.lock.yaml".pathChanged() )
   labels:
     appstudio.openshift.io/application: rhoai-v3-5-ea-2
     appstudio.openshift.io/component: odh-trustyai-service-v3-5-ea-2
