@@ -407,8 +407,6 @@ class UploadEndpointTest {
 
     @Test
     void uploadMalformedGzipCompressedData() {
-        // Test that malformed gzip-compressed payloads return a client error (400)
-        // rather than a server error (500)
         byte[] invalidGzipPayload = "not-a-valid-gzip-stream".getBytes(StandardCharsets.UTF_8);
 
         given()
