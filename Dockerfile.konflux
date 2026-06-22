@@ -32,7 +32,7 @@ RUN cd ./cachi2/output/deps/generic && \
 
 
 ###############################################################################
-FROM registry.redhat.io/ubi8/openjdk-17-runtime@sha256:9c2a22a765d974577bd93d652599a65b27ac83d4e705af87e30aad7044c90fbd as runtime
+FROM registry.redhat.io/ubi8/openjdk-17-runtime@sha256:3a09078474e860de1106669c82ef46dfb81014402c69c9a12ff47097352f8164 as runtime
 ENV LANGUAGE='en_US:en'
 
 
