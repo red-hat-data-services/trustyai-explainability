@@ -44,6 +44,11 @@
             <artifactId>xstream</artifactId>
             <version>1.4.21</version>
           </dependency>
+          <dependency>
+            <groupId>org.eclipse.parsson</groupId>
+            <artifactId>parsson</artifactId>
+            <version>${version.org.eclipse.parsson}</version>
+          </dependency>
           <!-- Override io.netty version to address CVEs -->
           <dependency>
             <groupId>io.netty</groupId>
