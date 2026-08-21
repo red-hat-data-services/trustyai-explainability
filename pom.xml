@@ -241,6 +241,12 @@
                 <artifactId>opennlp-tools</artifactId>
                 <version>${version.org.apache.opennlp}</version>
             </dependency>
+            <!-- Override plexus-utils to 3.6.1 for CVE-2025-67030 -->
+            <dependency>
+                <groupId>org.codehaus.plexus</groupId>
+                <artifactId>plexus-utils</artifactId>
+                <version>3.6.1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
