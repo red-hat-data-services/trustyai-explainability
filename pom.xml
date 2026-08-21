@@ -247,6 +247,12 @@
                 <artifactId>plexus-utils</artifactId>
                 <version>3.6.1</version>
             </dependency>
+            <!-- Override Eclipse Parsson to 1.1.8 for CVE-2026-9563 -->
+            <dependency>
+                <groupId>org.eclipse.parsson</groupId>
+                <artifactId>parsson</artifactId>
+                <version>1.1.8</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
