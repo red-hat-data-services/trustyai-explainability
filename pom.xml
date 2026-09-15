@@ -50,6 +50,8 @@
         <version.org.assertj>3.22.0</version.org.assertj>
         <version.org.awaitility>4.2.0</version.org.awaitility>
 
+        <version.org.codehaus.plexus.plexus-utils>3.6.1</version.org.codehaus.plexus.plexus-utils>
+
         <version.org.optaplanner>8.30.0.Final</version.org.optaplanner>
         <version.org.kie.kogito>1.30.0.Final</version.org.kie.kogito>
 
@@ -189,6 +191,7 @@
                 <version>${version.org.assertj}</version>
                 <scope>test</scope>
             </dependency>
+            
 
             <dependency>
                 <groupId>org.mockito</groupId>
@@ -224,12 +227,19 @@
                 <scope>test</scope>
             </dependency>
 
-
+            <dependency>
+                <groupId>org.codehaus.plexus</groupId>
+                <artifactId>plexus-utils</artifactId>
+                <version>${version.org.codehaus.plexus.plexus-utils}</version>
+                <scope>test</scope>
+            </dependency>
+            
             <dependency>
                 <groupId>org.apache.opennlp</groupId>
                 <artifactId>opennlp-tools</artifactId>
                 <version>${version.org.apache.opennlp}</version>
             </dependency>
+            
         </dependencies>
     </dependencyManagement>
 
