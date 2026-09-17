@@ -49,7 +49,7 @@
             <artifactId>parsson</artifactId>
             <version>${version.org.eclipse.parsson}</version>
           </dependency>
-          <!-- Override io.netty version to address CVEs -->
+          <!-- Align all unshaded Netty modules to the centrally managed version. -->
           <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-handler</artifactId>

@@ -28,7 +28,7 @@
                 <artifactId>protobuf-java</artifactId>
                 <version>3.25.5</version>
             </dependency>
-            <!-- Override io.netty version to address CVEs -->
+            <!-- Align all unshaded Netty modules to the centrally managed version. -->
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-handler</artifactId>
