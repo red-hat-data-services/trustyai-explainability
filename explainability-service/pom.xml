@@ -25,6 +25,15 @@
     </properties>
     <dependencyManagement>
         <dependencies>
+            <!-- Override Quarkus' Jackson 2.18.2 - CVE-2026-89425.
+                 Must precede quarkus-bom: for imported BOMs the first declaration wins. -->
+            <dependency>
+                <groupId>com.fasterxml.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>${version.com.fasterxml.jackson}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>${quarkus.platform.bom-group-id}</groupId>
                 <artifactId>${quarkus.platform.artifact-id}</artifactId>
