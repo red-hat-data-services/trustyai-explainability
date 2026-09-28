@@ -3,3 +3,4 @@ metadata:
 artifacts:
   - download_url: https://indy.corp.redhat.com/api/content/maven/hosted/pnc-builds/org/kie/trustyai/explainability-service/999.0.0.managedsvc-redhat-02058/explainability-service-999.0.0.managedsvc-redhat-02058.zip
     checksum: sha256:72bea6d201e276ff682584bc55e2dd0b8ad3583875c9de72b93fadad874ef0f2
+# Rebuild trigger - Mon 28 Sep 2026 20:11:21 IST
