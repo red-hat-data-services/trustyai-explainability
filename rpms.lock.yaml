@@ -2,71 +2,71 @@
 lockfileVersion: 1
 lockfileVendor: redhat
 arches:
-- arch: aarch64
-  packages:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/u/unzip-6.0-60.el9.aarch64.rpm
-    repoid: ubi-9-for-aarch64-baseos-rpms
-    size: 182733
-    checksum: sha256:424c0f9800ccc12123b854a19f786451f0f8c70de51fc9144bd014df70453c17
-    name: unzip
-    evr: 6.0-60.el9
-    sourcerpm: unzip-6.0-60.el9.src.rpm
-  source:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/source/SRPMS/Packages/u/unzip-6.0-60.el9.src.rpm
-    repoid: ubi-9-for-aarch64-baseos-source-rpms
-    size: 1436236
-    checksum: sha256:2f745809f67389b9cb4bc051a16a8e1b3049253632a0c34943695b2330717c48
-    name: unzip
-    evr: 6.0-60.el9
-  module_metadata: []
-- arch: ppc64le
-  packages:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/u/unzip-6.0-60.el9.ppc64le.rpm
-    repoid: ubi-9-for-ppc64le-baseos-rpms
-    size: 190290
-    checksum: sha256:056925a1c751fd0c4545ca546e4ce1e015234464f63114c22ecddf73fed9c482
-    name: unzip
-    evr: 6.0-60.el9
-    sourcerpm: unzip-6.0-60.el9.src.rpm
-  source:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/source/SRPMS/Packages/u/unzip-6.0-60.el9.src.rpm
-    repoid: ubi-9-for-ppc64le-baseos-source-rpms
-    size: 1436236
-    checksum: sha256:2f745809f67389b9cb4bc051a16a8e1b3049253632a0c34943695b2330717c48
-    name: unzip
-    evr: 6.0-60.el9
-  module_metadata: []
-- arch: s390x
-  packages:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/u/unzip-6.0-60.el9.s390x.rpm
-    repoid: ubi-9-for-s390x-baseos-rpms
-    size: 180799
-    checksum: sha256:f84d609e0f20a4debcbdd057707bda58bf942ba6599bfbfa5d1beae14766bbe8
-    name: unzip
-    evr: 6.0-60.el9
-    sourcerpm: unzip-6.0-60.el9.src.rpm
-  source:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/source/SRPMS/Packages/u/unzip-6.0-60.el9.src.rpm
-    repoid: ubi-9-for-s390x-baseos-source-rpms
-    size: 1436236
-    checksum: sha256:2f745809f67389b9cb4bc051a16a8e1b3049253632a0c34943695b2330717c48
-    name: unzip
-    evr: 6.0-60.el9
-  module_metadata: []
-- arch: x86_64
-  packages:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/u/unzip-6.0-60.el9.x86_64.rpm
-    repoid: ubi-9-for-x86_64-baseos-rpms
-    size: 185941
-    checksum: sha256:6a83acc410c8640daf3f97cd978cc9400ca9caf600006fd1510622bfa9faaf23
-    name: unzip
-    evr: 6.0-60.el9
-    sourcerpm: unzip-6.0-60.el9.src.rpm
-  source:
-  - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/unzip-6.0-60.el9.src.rpm
-    repoid: ubi-9-for-x86_64-baseos-source-rpms
-    size: 1436236
-    checksum: sha256:2f745809f67389b9cb4bc051a16a8e1b3049253632a0c34943695b2330717c48
-    name: unzip
-    evr: 6.0-60.el9
-  module_metadata: []
+  - arch: aarch64
+    packages:
+      - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/os/Packages/u/unzip-6.0-60.el9.aarch64.rpm
+        repoid: ubi-9-for-aarch64-baseos-rpms
+        size: 182733
+        checksum: sha256:424c0f9800ccc12123b854a19f786451f0f8c70de51fc9144bd014df70453c17
+        name: unzip
+        evr: 6.0-60.el9
+        sourcerpm: unzip-6.0-60.el9.src.rpm
+    source:
+      - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/aarch64/baseos/source/SRPMS/Packages/u/unzip-6.0-60.el9.src.rpm
+        repoid: ubi-9-for-aarch64-baseos-source-rpms
+        size: 1436236
+        checksum: sha256:2f745809f67389b9cb4bc051a16a8e1b3049253632a0c34943695b2330717c48
+        name: unzip
+        evr: 6.0-60.el9
+    module_metadata: []
+  - arch: ppc64le
+    packages:
+      - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/os/Packages/u/unzip-6.0-60.el9.ppc64le.rpm
+        repoid: ubi-9-for-ppc64le-baseos-rpms
+        size: 190290
+        checksum: sha256:056925a1c751fd0c4545ca546e4ce1e015234464f63114c22ecddf73fed9c482
+        name: unzip
+        evr: 6.0-60.el9
+        sourcerpm: unzip-6.0-60.el9.src.rpm
+    source:
+      - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/ppc64le/baseos/source/SRPMS/Packages/u/unzip-6.0-60.el9.src.rpm
+        repoid: ubi-9-for-ppc64le-baseos-source-rpms
+        size: 1436236
+        checksum: sha256:2f745809f67389b9cb4bc051a16a8e1b3049253632a0c34943695b2330717c48
+        name: unzip
+        evr: 6.0-60.el9
+    module_metadata: []
+  - arch: s390x
+    packages:
+      - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/os/Packages/u/unzip-6.0-60.el9.s390x.rpm
+        repoid: ubi-9-for-s390x-baseos-rpms
+        size: 180799
+        checksum: sha256:f84d609e0f20a4debcbdd057707bda58bf942ba6599bfbfa5d1beae14766bbe8
+        name: unzip
+        evr: 6.0-60.el9
+        sourcerpm: unzip-6.0-60.el9.src.rpm
+    source:
+      - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/s390x/baseos/source/SRPMS/Packages/u/unzip-6.0-60.el9.src.rpm
+        repoid: ubi-9-for-s390x-baseos-source-rpms
+        size: 1436236
+        checksum: sha256:2f745809f67389b9cb4bc051a16a8e1b3049253632a0c34943695b2330717c48
+        name: unzip
+        evr: 6.0-60.el9
+    module_metadata: []
+  - arch: x86_64
+    packages:
+      - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/os/Packages/u/unzip-6.0-60.el9.x86_64.rpm
+        repoid: ubi-9-for-x86_64-baseos-rpms
+        size: 185941
+        checksum: sha256:6a83acc410c8640daf3f97cd978cc9400ca9caf600006fd1510622bfa9faaf23
+        name: unzip
+        evr: 6.0-60.el9
+        sourcerpm: unzip-6.0-60.el9.src.rpm
+    source:
+      - url: https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/unzip-6.0-60.el9.src.rpm
+        repoid: ubi-9-for-x86_64-baseos-source-rpms
+        size: 1436236
+        checksum: sha256:2f745809f67389b9cb4bc051a16a8e1b3049253632a0c34943695b2330717c48
+        name: unzip
+        evr: 6.0-60.el9
+    module_metadata: []
