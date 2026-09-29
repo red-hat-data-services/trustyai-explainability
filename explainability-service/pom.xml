@@ -44,6 +44,12 @@
             <artifactId>xstream</artifactId>
             <version>1.4.21</version>
           </dependency>
+          <!-- Override Plexus Utils until the Quarkus test tooling moves to a fixed release. -->
+          <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+            <version>3.6.1</version>
+          </dependency>
           <dependency>
             <groupId>org.eclipse.parsson</groupId>
             <artifactId>parsson</artifactId>
