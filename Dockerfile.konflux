@@ -25,7 +25,7 @@ RUN cd ./cachi2/output/deps/generic && \
     for file in *.zip; do unzip -d /root/ "$file"; done
 
 ###############################################################################
-FROM registry.access.redhat.com/ubi9/openjdk-17-runtime@sha256:b53282e4a386110754677a0bf5598da73f48a30128796072a6c89cf95aa03086 as runtime
+FROM registry.access.redhat.com/ubi9/openjdk-17-runtime@sha256:24edfda67d1afae5fd48b193320ab2b357340fd06f6d8b4e3e8cd04db6ebebe8 as runtime
 ENV LANGUAGE='en_US:en'
 
 
