@@ -28,6 +28,11 @@ RUN cd ./cachi2/output/deps/generic && \
 FROM registry.redhat.io/ubi9/openjdk-17:latest@sha256:5c179856ef17684de55f5819f36ee71329539e7161d1ed06cf4c6e8d735044cb as runtime
 ENV LANGUAGE='en_US:en'
 
+# Update libbrotli to 1.0.9-10.el9_8.1
+USER 0
+RUN microdnf update -y libbrotli && microdnf clean all
+USER 185
+
 
 # We make four distinct layers so if there are application changes the library layers can be re-used
 COPY --from=stage /root/explainability-service/target/quarkus-app/lib/ /deployments/lib/
