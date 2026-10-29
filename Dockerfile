@@ -18,7 +18,7 @@ ARG CI_CONTAINER_VERSION="unknown"
 
 
 ## Livebuilder CODE BEGIN ##
-FROM registry.access.redhat.com/ubi8/openjdk-17:latest AS build
+FROM registry.access.redhat.com/ubi8/openjdk-17:latest@sha256:9d7649f539921c1ac0d1fed88d691181e24a846dc39423d369c343d3817a0f0e AS build
 
 ## Build args to be used at this step
 ARG SOURCE_CODE
