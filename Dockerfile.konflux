@@ -29,7 +29,9 @@ FROM registry.redhat.io/ubi9/openjdk-17:latest@sha256:5c179856ef17684de55f5819f3
 ENV LANGUAGE='en_US:en'
 
 # Update libbrotli to 1.0.9-10.el9_8.1
+USER 0
 RUN microdnf update -y libbrotli && microdnf clean all
+USER 185
 
 
 # We make four distinct layers so if there are application changes the library layers can be re-used
