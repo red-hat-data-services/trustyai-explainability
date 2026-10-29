@@ -8,5 +8,6 @@ contentOrigin:
     - ubi.repo
 packages:
   - unzip
+  - libbrotli
 context:
   containerfile: Dockerfile.konflux
