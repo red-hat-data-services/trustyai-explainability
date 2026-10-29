@@ -44,7 +44,7 @@ RUN mvn -B clean package --file pom.xml -P service-minimal -DskipTests -Dquarkus
 
 
 ###############################################################################
-FROM registry.access.redhat.com/ubi8/openjdk-17-runtime:latest@sha256:05c7cbb54ed663bd88c39e4ad330a72bd394e5ae0f29c01457880be7caadd72e AS runtime
+FROM registry.access.redhat.com/ubi8/openjdk-17-runtime:latest@sha256:bd640187a77643a9df2809b2c059a9821ea180325833c5325198716d34ea1195 AS runtime
 ENV LANGUAGE='en_US:en'
 
 ## Livebuilder CODE BEGIN ##
