@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8:8.10-1020
+FROM registry.access.redhat.com/ubi8:8.10@sha256:2fb955fd65a68a80f5d37b4e458a3732a52f9efb6575ae5a8a726af771b6ca48
 ARG OC_CLI_URL=https://mirror.openshift.com/pub/openshift-v4/amd64/clients/ocp/4.14.33/openshift-client-linux.tar.gz
 ARG TRUSTYAI_TESTS_ORG=trustyai-explainability
 ARG TRUSTYAI_TESTS_REPO=trustyai-tests
