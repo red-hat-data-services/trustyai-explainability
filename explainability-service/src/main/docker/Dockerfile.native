@@ -14,7 +14,7 @@
 # docker run -i --rm -p 8080:8080 quarkus/trustyai-service
 #
 ###
-FROM registry.access.redhat.com/ubi8/ubi-minimal:8.6
+FROM registry.access.redhat.com/ubi8/ubi-minimal:latest@sha256:bc7e42f085daa77b4cc51968ae9afffd0a96d802b710cdba6d75630200591e05
 WORKDIR /work/
 RUN chown 1001 /work \
     && chmod "g+rwX" /work \
