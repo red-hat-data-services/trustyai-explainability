@@ -25,7 +25,7 @@ RUN cd ./cachi2/output/deps/generic && \
     for file in *.zip; do unzip -d /root/ "$file"; done
 
 ###############################################################################
-FROM registry.redhat.io/ubi9/openjdk-17:latest@sha256:7c71bf6a9eebdff3738453ec2833b542393e5be226b0af7a94eb7277d890b103 as runtime
+FROM registry.redhat.io/ubi9/openjdk-17:latest@sha256:a4f760661961168493a79b44b4d2047a7a0b29a5cccd89168cfb469060abb99e as runtime
 ENV LANGUAGE='en_US:en'
 
 # Update libbrotli to 1.0.9-10.el9_8.1
