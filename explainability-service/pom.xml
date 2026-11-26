@@ -39,6 +39,14 @@
             <artifactId>snappy-java</artifactId>
             <version>${version.org.xerial.snappy}</version>
           </dependency>
+          <!-- Override the version of mysql-connector-j for RHAI-60184 (fixed upstream in
+               26.7.0; quarkus-bom 3.20.6.2 manages 8.3.0 and product builds resolve a
+               vulnerable 9.7.x) -->
+          <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>${version.com.mysql.mysql-connector-j}</version>
+          </dependency>
           <!-- Override the version of protobuf-java until io-grpc moves from 3.25.3 to 3.25.5-->
           <dependency>
             <groupId>com.google.protobuf</groupId>
