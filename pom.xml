@@ -65,6 +65,7 @@
 
         <version.io.netty>4.1.139.Final</version.io.netty>
         <version.org.xerial.snappy>1.1.10.12</version.org.xerial.snappy> <!-- CVE-2026-90559 -->
+        <version.com.mysql.mysql-connector-j>26.7.0</version.com.mysql.mysql-connector-j>
         <version.org.eclipse.parsson>1.1.9</version.org.eclipse.parsson>
         <nexus.staging.plugin.version>1.6.6</nexus.staging.plugin.version>
 
